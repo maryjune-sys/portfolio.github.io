@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .description {
+            margin-top: 10px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .definition {
+            margin-top: 10px;
+        }
+
+        .rating {
+            margin-top: 10px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .star-rating {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .stars {
+            display: flex;
+            flex-direction:row-reverse;
+            justify-content: flex-start;
+            
+        }
+
+        .star-rating input {
+            display: none;
+        }
+
+        .star-rating label {
+            font-size: 2em;
+            color:rgb(252, 234, 212);
+            cursor: pointer;
+            transition:color 0.2s;
+        }
+
+        .star-rating input:checked ~ label {
+            color:#edea05;
+        }
+
+        .star-rating label:hover, 
+        .star-rating label:hover ~ label {
+            color: #edea05;
+        }
+    </style>
+
+</head>
+<body>
+    <h1> LE FESTIN </h1>
+
+    <a href = "homepage.html">Return to Homepage</a> <br>
+
+    <video controls width = "800" height = "500">
+        <source src = "vid/lf.mp4" type = "video/mp4">
+    </video> 
+    
+    <div class = "description"> Description </div>
+
+    <div class = "definition">
+        <q>Le Festin</q> is an original soundtrack of the 2007 Disney/Pixar film, <em>Ratatouille</em>. It was written by <strong> Michael Giacchino </strong>and performed by <strong> Camille Dalmais </strong>Camille Dalmais.
+        <br>
+        <strong> Lyrics: </strong> <br>
+        <i>
+            Les rêves des amoureux sont comme le bon vin <br>
+            lls donnent de la joie ou bien du chagrin <br>
+            Affaibli par la faim, je suis malheureux <br>
+            Volant en chemin tout ce que je peux <br>
+            Car rien n'est gratuit dans la vie <br>
+            L'espoir est un plat bien trop vite consommé <br>
+            à sauter les repas je suis habitué <br>
+            Un voleur solitaire est triste à nourrir <br>
+            Ah, jeux si amer, je ne peux réussir <br>
+            Car rien n'est gratuit dans la vie <br>
+            Jamais on ne me dira <br>
+            Que la course aux étoiles <br>
+            ça n'est pas pour moi <br>
+            Laissez-moi vous émerveiller et prendre mon envol <br>
+            Nous allons enfin nous régaler <br> </br>
+            La fête va enfin commencer <br>   
+            Sortez les bouteilles, fini les ennuis <br>
+            Je dresse le table de ma nouvelle vie <br>
+            Je suis heureux à l'idée de ce nouveau destin <br>
+            Une vie à me cacher et puis libre enfin <br>
+            Le festin est sur mon chemin <br>
+            Une vie à me cacher et puis libre enfin <br>
+            Le festin est sur mon chemin
+        </i> <br> </br>
+        ©2007 Walt Disney Records/Pixar.
+    </div>
+
+    <div class = "rating"> Rating: </div>
+
+    <form class = "star-rating">
+        <div class = "stars">
+            <input type = "radio" id = "5" name = "rate" value = "5">
+            <label for = "5">&#9733;</label>
+            <input type = "radio" id = "4" name = "rate" value = "4">
+            <label for = "4">&#9733;</label>
+            <input type = "radio" id = "3" name = "rate" value = "3">
+            <label for = "3">&#9733;</label>
+            <input type = "radio" id = "2" name = "rate" value = "2">
+            <label for = "2">&#9733;</label>
+            <input type = "radio" id = "1" name = "rate" value = "1">
+            <label for = "1">&#9733;</label>
+        </div>    
+    </form>
+</body>
+</html>

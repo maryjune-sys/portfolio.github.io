@@ -1,0 +1,64 @@
+body {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-top: 10px;
+}
+
+.card {
+    width: 250px;
+    padding: 30px;
+    border: 2px solid black;
+    box-shadow: 5px 5px 10px rgb(87, 155, 206);
+}
+
+.h {
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 20px;
+    
+}
+
+.txt {
+    padding: 5px;
+}
+
+.input {
+    display: flex;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.gender-container {
+    display: flex;
+    flex-direction: column; 
+    padding: 10px;
+    gap: 10px; 
+}
+
+.tc {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+
+.course-container {
+    margin-top: 20px;
+}
+
+.button {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#bt {
+    font-size: 13pt;
+    width: 100px;
+    height: auto;
+}
+
+#bt:active {
+    background-color: rgb(91, 186, 102);
+    color: white;
+}

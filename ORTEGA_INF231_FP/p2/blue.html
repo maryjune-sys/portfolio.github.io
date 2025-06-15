@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .description {
+            margin-top: 10px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .definition {
+            margin-top: 10px;
+        }
+
+        .rating {
+            margin-top: 10px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .star-rating {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .stars {
+            display: flex;
+            flex-direction:row-reverse;
+            justify-content: flex-start;
+            
+        }
+
+        .star-rating input {
+            display: none;
+        }
+
+        .star-rating label {
+            font-size: 2em;
+            color:rgb(252, 234, 212);
+            cursor: pointer;
+            transition:color 0.2s;
+        }
+
+        .star-rating input:checked ~ label {
+            color:#edea05;
+        }
+
+        .star-rating label:hover, 
+        .star-rating label:hover ~ label {
+            color: #edea05;
+        }
+    </style>
+</head>
+<body>
+    <h1>BLUE (Official Music Video) </h1>
+
+    <a href = "homepage.html">Return to Homepage</a> <br>
+
+    <video controls width = "800" height = "500">
+        <source src = "vid/blue.mp4" type = "video/mp4">
+    </video> 
+    
+    <div class = "description"> Description </div>
+
+    <div class = "definition">
+        <q>Blue</q> is a song written by <strong> Yung Kai </strong>, a chinese-canadian musician and producer. <q>Blue</q> is inspired by a chinese drama, <em>When I Fly Towards You.</em><br></br>
+        <strong> Lyrics: </strong> <br>
+        <i>
+            Your morning eyes, I could stare like watching stars<br>
+            I could walk you by, and I'll tell without a thought<br>
+            You'd be mine, would you mind if I took your hand tonight?<br>
+            Know you're all that I want this life<br></br>
+
+            I'll imagine we fell in love<br>
+            I'll nap under moonlight skies with you<br>
+            I think I'll picture us, you with the waves<br>
+            The ocean's colors on your face<br>
+            I'll leave my heart with your air<br>
+            So let me fly with you<br>
+            Will you be forever with me?<br></br>
+
+            My love will always stay by you<br>
+            I'll keep it safe, so don't you worry a thing, I'll tell you I love you more<br>
+            It's stuck with you forever, so promise you won't let it go<br>
+            I'll trust the universe will always bring me to you<br></br>
+
+            I'll imagine we fell in love<br>
+            I'll nap under moonlight skies with you<br>
+            I think I'll picture us, you with the waves<br>
+            The ocean's colors on your face<br>
+            I'll leave my heart with your air<br>
+            So let me fly with you<br>
+            Will you be forever with me?<br>
+        </i>
+    </div>
+
+    <div class = "rating"> Rating: </div>
+
+    <form class = "star-rating">
+        <div class = "stars">
+            <input type = "radio" id = "5" name = "rate" value = "5">
+            <label for = "5">&#9733;</label>
+            <input type = "radio" id = "4" name = "rate" value = "4">
+            <label for = "4">&#9733;</label>
+            <input type = "radio" id = "3" name = "rate" value = "3">
+            <label for = "3">&#9733;</label>
+            <input type = "radio" id = "2" name = "rate" value = "2">
+            <label for = "2">&#9733;</label>
+            <input type = "radio" id = "1" name = "rate" value = "1">
+            <label for = "1">&#9733;</label>
+        </div>    
+    </form>
+
+
+
+
+</body>
+</html>
