@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .description {
+            margin-top: 10px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .definition {
+            margin-top: 10px;
+        }
+
+        .rating {
+            margin-top: 10px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .star-rating {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .stars {
+            display: flex;
+            flex-direction:row-reverse;
+            justify-content: flex-start;
+            
+        }
+
+        .star-rating input {
+            display: none;
+        }
+
+        .star-rating label {
+            font-size: 2em;
+            color:rgb(252, 234, 212);
+            cursor: pointer;
+            transition:color 0.2s;
+        }
+
+        .star-rating input:checked ~ label {
+            color:#edea05;
+        }
+
+        .star-rating label:hover, 
+        .star-rating label:hover ~ label {
+            color: #edea05;
+        }
+    </style>
+
+</head>
+<body>
+    <h1> BUNDLE OF JOY </h1>
+
+    <a href = "index.html">Return to Homepage</a> <br>
+
+    <video controls width = "800" height = "500">
+        <source src = "vid/boj.mp4" type = "video/mp4">
+    </video>
+
+    <div class = "description"> Description </div>
+
+    <div class = "definition">
+        <q>Bundle of Joy</q> is an instrumental piece from the 2015 Disney/Pixar animated film, <em>Inside Out.</em><br>
+        <p><q>Growing up can be a bumpy road, and it's no exception for Riley, who is uprooted from her Midwest life when her father stars a new job in San Francisco. Like everyone else, Riley is guided by her emotions - Joy, Fear, Anger, Disgust, and Sadness. The emotions live in Headquarters, the control center inside Riley's mind, where they help advise her through everyday life.</q></p> ©2024 Walt Disney Records/Pixar.
+    </div>
+
+    <div class = "rating"> Rating: </div>
+
+    <form class = "star-rating">
+        <div class = "stars">
+            <input type = "radio" id = "5" name = "rate" value = "5">
+            <label for = "5">&#9733;</label>
+            <input type = "radio" id = "4" name = "rate" value = "4">
+            <label for = "4">&#9733;</label>
+            <input type = "radio" id = "3" name = "rate" value = "3">
+            <label for = "3">&#9733;</label>
+            <input type = "radio" id = "2" name = "rate" value = "2">
+            <label for = "2">&#9733;</label>
+            <input type = "radio" id = "1" name = "rate" value = "1">
+            <label for = "1">&#9733;</label>
+        </div>    
+    </form>
+
+</body>
+</html>
